@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-# 400Project - Group 8 xx
->>>>>>> 7088453 (addd sth in title)
+# 400Project - Group 8 
+
 #Week1:10.9-10.13
 
 
