@@ -3,7 +3,7 @@
 # Week1:10.9-10.13
 
 
-##Description:
+## Description:
 Dillard’s is a major retail chain with several stores. Dillard’s has point-of-sales (POS) data over a period of time in 2004 and 2005 that includes their store information, stock-keeping-unit (SKU), and transactions. Over the recorded times, around half of all transactions happen with some discounts. The MLDS team believes that it would be beneficial to understand which components (product’s features, location, time of the year, etc.) contribute to the need to offer discounts within transactions.
 
 
@@ -11,7 +11,7 @@ Understanding the mechanics of transactions with discounts will allow Dillard’
 
 
 ## Findings and Analysis:
-data size below:
+Data size below:
 Deptinfo: 59
 Skstino: 39230146
 Skuinfo: 1564177
@@ -24,14 +24,12 @@ Skstinfo_df.shape == (39230146, 5)
 There are 39230146 rows and 5 columns. However the Sktino dataset has not have column names, thus I check the data type for each column, with 2 floating and 3 int data type. According the data schema, I signed new column names for the dataset as below.
 Skstinfo_df.columns =['SKU','Store','Cost','Retail','Extra_Col']
 
-![image1](Skst.png)
 
 Skuinfo:
 There are 1,564,198 observations and 12 variables in the Skuinfo dataset. However, the last two variables are unknown variables (I named them "Unknown"), which contain numbers and text. For irrelevant variables, we decided to delete them.
 Other variables in this dataset, such as "STYLE", "SIZE", which are purely numeric, purely textual, or a combination of numeric, textual, and symbolic, will need to be cleaned up and categorized in depth for further discussion.
 Some numeric variables such as "DEPT", "UPC", "COLOR", "SIZE ", all of which contain unknown values, need to be cleaned up.
 This is the summary of the Skuinfo dataset.
-![image2](Sku.png)
 
 
 Transact:
