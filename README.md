@@ -1,4 +1,6 @@
-# 400Project - Group 8 
+<<<<<<< HEAD
+# 400Project - Group 8 xx
+>>>>>>> 7088453 (addd sth in title)
 #Week1:10.9-10.13
 
 
@@ -67,4 +69,7 @@ If not enough inventory we could make a suggestion of how much more needs to be 
 Or  which other products that have less demand we can supply less of, so we  can instead cover future demand shortages for the products that have higher demand. 
 We can look and see which states have higher sales as well as which states. In addition to that we can look and see whether demand is met better in the states that have inventory locations.  
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7088453 (addd sth in title)
