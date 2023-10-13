@@ -30,6 +30,7 @@ There are 1,564,198 observations and 12 variables in the Skuinfo dataset. Howeve
 Other variables in this dataset, such as "STYLE", "SIZE", which are purely numeric, purely textual, or a combination of numeric, textual, and symbolic, will need to be cleaned up and categorized in depth for further discussion.
 Some numeric variables such as "DEPT", "UPC", "COLOR", "SIZE ", all of which contain unknown values, need to be cleaned up.
 This is the summary of the Skuinfo dataset.
+![2](sku.png)
 
 
 Transact:
