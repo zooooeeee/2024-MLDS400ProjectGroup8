@@ -6,6 +6,7 @@
 ##Description:
 Dillard’s is a major retail chain with several stores. Dillard’s has point-of-sales (POS) data over a period of time in 2004 and 2005 that includes their store information, stock-keeping-unit (SKU), and transactions. Over the recorded times, around half of all transactions happen with some discounts. The MLDS team believes that it would be beneficial to understand which components (product’s features, location, time of the year, etc.) contribute to the need to offer discounts within transactions.
 
+
 Understanding the mechanics of transactions with discounts will allow Dillard’s to increase the production rate for products that can be sold without a discount. Moreover, Dillard’s can also accurately predict future revenue by predicting the discount (reduction of sales price).
 
 
@@ -20,17 +21,24 @@ Transact: 120916896
 Skstino:
 First, I used python to explore the dataset.
 Skstinfo_df.shape == (39230146, 5)
-There are 39230146 rows and 5 columns.
+There are 39230146 rows and 5 columns. However the Sktino dataset has not have column names, thus I check the data type for each column, with 2 floating and 3 int data type. According the data schema, I signed new column names for the dataset as below.
+Skstinfo_df.columns =['SKU','Store','Cost','Retail','Extra_Col']
+
+![image](Skst.png)
 
 Skuinfo:
 There are 1,564,198 observations and 12 variables in the Skuinfo dataset. However, the last two variables are unknown variables (I named them "Unknown"), which contain numbers and text. For irrelevant variables, we decided to delete them.
 Other variables in this dataset, such as "STYLE", "SIZE", which are purely numeric, purely textual, or a combination of numeric, textual, and symbolic, will need to be cleaned up and categorized in depth for further discussion.
 Some numeric variables such as "DEPT", "UPC", "COLOR", "SIZE ", all of which contain unknown values, need to be cleaned up.
 This is the summary of the Skuinfo dataset.
+![image](Sku.png)
 
 
 Transact:
 The transactions dataset is the largest one out of the 5 datasets, it contains 120,916,896 million observations and 14 features. According to the database schema there are only 12 features in the transactions table. Therefore, for next week we are planning to delve deeper into the dataset to clean the data before we perform any further analysis.
+
+Strinfo and deptinfo dataset:
+Cleaned and did basic data analysis for strinfo and  deptinfo. We found that the top 3 states that have the most stores are Texas, Florida, and Arizona. The top cities that have the highest number of  stores are LITTLE ROCK,GILBERT, SAN ANTONIO,OLATHE and HOUSTON.
 
 
 
@@ -68,7 +76,7 @@ If not enough inventory we could make a suggestion of how much more needs to be 
 Or  which other products that have less demand we can supply less of, so we  can instead cover future demand shortages for the products that have higher demand. 
 We can look and see which states have higher sales as well as which states. In addition to that we can look and see whether demand is met better in the states that have inventory locations.  
 
-<<<<<<< HEAD
+Work planned 10/13 - 10/20:
+Delve deeper into the dataset to clean the data before performing any further analysis.
+Learn how to use Postgres
 
-=======
->>>>>>> 7088453 (addd sth in title)
