@@ -23,7 +23,7 @@ First, I used python to explore the dataset.
 Skstinfo_df.shape == (39230146, 5)
 There are 39230146 rows and 5 columns. However the Sktino dataset has not have column names, thus I check the data type for each column, with 2 floating and 3 int data type. According the data schema, I signed new column names for the dataset as below.
 Skstinfo_df.columns =['SKU','Store','Cost','Retail','Extra_Col']
-
+![1](Skst.png)
 
 Skuinfo:
 There are 1,564,198 observations and 12 variables in the Skuinfo dataset. However, the last two variables are unknown variables (I named them "Unknown"), which contain numbers and text. For irrelevant variables, we decided to delete them.
