@@ -1,6 +1,6 @@
 # 400Project - Group 8 
 
-#Week1:10.9-10.13
+# Week1:10.9-10.13
 
 
 ##Description:
@@ -10,7 +10,7 @@ Dillard’s is a major retail chain with several stores. Dillard’s has point-o
 Understanding the mechanics of transactions with discounts will allow Dillard’s to increase the production rate for products that can be sold without a discount. Moreover, Dillard’s can also accurately predict future revenue by predicting the discount (reduction of sales price).
 
 
-##Findings and Analysis:
+## Findings and Analysis:
 data size below:
 Deptinfo: 59
 Skstino: 39230146
@@ -24,14 +24,14 @@ Skstinfo_df.shape == (39230146, 5)
 There are 39230146 rows and 5 columns. However the Sktino dataset has not have column names, thus I check the data type for each column, with 2 floating and 3 int data type. According the data schema, I signed new column names for the dataset as below.
 Skstinfo_df.columns =['SKU','Store','Cost','Retail','Extra_Col']
 
-![image](Skst.png)
+![image1](Skst.png)
 
 Skuinfo:
 There are 1,564,198 observations and 12 variables in the Skuinfo dataset. However, the last two variables are unknown variables (I named them "Unknown"), which contain numbers and text. For irrelevant variables, we decided to delete them.
 Other variables in this dataset, such as "STYLE", "SIZE", which are purely numeric, purely textual, or a combination of numeric, textual, and symbolic, will need to be cleaned up and categorized in depth for further discussion.
 Some numeric variables such as "DEPT", "UPC", "COLOR", "SIZE ", all of which contain unknown values, need to be cleaned up.
 This is the summary of the Skuinfo dataset.
-![image](Sku.png)
+![image2](Sku.png)
 
 
 Transact:
@@ -40,19 +40,6 @@ The transactions dataset is the largest one out of the 5 datasets, it contains 1
 Strinfo and deptinfo dataset:
 Cleaned and did basic data analysis for strinfo and  deptinfo. We found that the top 3 states that have the most stores are Texas, Florida, and Arizona. The top cities that have the highest number of  stores are LITTLE ROCK,GILBERT, SAN ANTONIO,OLATHE and HOUSTON.
 
-
-
-Data thoughts:
-1. We found that the the top 3 states that has the most stores are Texas, Florida, and Arizona. The top cities that has the most stores are LITTLE ROCK,GILBERT, SAN ANTONIO,OLATHE, HOUSTON.
-
-
-2. What is the difference between Sales price, Original price, and Retail price 
-There are five data sheets in the file with the relationship shown in the database diagram, and I think we could construct the data as the dataframe in sql.
-
-
-
-
-##Plans for Next Week:
 
 Ideas drafted for the first week(which need further discussion):
 1. Can we predict customer purchase behavior based on transaction data including variables such as transaction amount (AMT), brand (BRAND), stock item classification (CLASSID), color (COLOR), cost (COST), department (DEPT), original price (ORGPRICE), quantity (QUANTITY), retail price (RETAIL), sale date (SALEDATE), size (SIZE), and other relevant factors
@@ -76,7 +63,8 @@ If not enough inventory we could make a suggestion of how much more needs to be 
 Or  which other products that have less demand we can supply less of, so we  can instead cover future demand shortages for the products that have higher demand. 
 We can look and see which states have higher sales as well as which states. In addition to that we can look and see whether demand is met better in the states that have inventory locations.  
 
-Work planned 10/13 - 10/20:
+
+## Plans for Next Week:
 Delve deeper into the dataset to clean the data before performing any further analysis.
-Learn how to use Postgres
+Learn how to use Postgres, and create tables.
 
