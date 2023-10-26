@@ -128,7 +128,33 @@ Attempted to load all data tables from the schema on postgres.
     
 # Week3:10/20 - 10/27:
              
-             
+
+## Work done up to 10/27:
+
+Loading Transactions.csv and Sku.csv:
+    1.For skuinfo.csv, we successfully imported it into pgAdmin4. After we cleaned it in Python (cleaned all rows containing any missing values, deleted the unknown columns, cleaned PACKSIZE, CLASSID columns), we created 10 columns in pgAdmin4 and changed each column types to appropriate forms. We examined the data and discussed what columns are helpful for the model
+    ![5](sku_pic.png)
+    2.Transactions.csv table, we successfully uploaded into PgAdmin4:
+        a.We switched the order of SEQ and InterID in order to upload it into PDadmin4. One of them is the primary key according to the schema, and we took a look for the data in the above 2 columns. Only InterID is unique in combination with other existing primary keys.
+        b.We renamed and changed the order between the AMT and Original Price columns. We assumed that the Original Price for each unique item based on the SKU number would be the same as opposed to the Discounted price which can vary. Thus, after we analyzed the data we discovered that for the same SKU number the column that we originally assigned to be the Original Price had in fact a different price. The AMT and Original Price columns looked very similar and they had similar summary statistics but by doing the comparison with SKU we discovered that the order should be changed. Below is our updated order of the transactions table features. 
+        c.Further please note: 
+        i.The Unknown column refers to a column that is all 0’s which we decided to keep for now. 
+        ii.The Duplicate column was exactly the same as the AMT feature except 7 values so we renamed it to Duplicate and we have decided not to use it during future analysis. 
+
+    ![6](transact_pic.png)
+
+
+Research Questions: 
+The business question is, how can the company improve product selection and find those products with less return rate? This would help the company reduce the cost of receiving returned products and improve customer satisfaction. 
+To examine this business question, we formulated a research question: what features of products are associated with higher return rate? We can accomplish this by calculating return rate on products and doing a Random Forest Analysis for feature selection. We can also retrain the Random Forest model using only the selected features and evaluate its performance on the testing data.
+
+
+Work planned 10/23 - 10/27:
+Think about some approaches to address the research questions.
+Link pgAdmin4 with Python
+Choose related tables and variables for feature selection and model training 
+
+          
              
 
 
