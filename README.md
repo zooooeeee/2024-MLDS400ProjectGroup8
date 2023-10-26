@@ -126,7 +126,7 @@ Attempted to load all data tables from the schema on postgres.
   - Consider questions to explore.
 
     
-
+# Week3:10/20 - 10/27:
              
              
              
