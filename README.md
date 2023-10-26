@@ -141,9 +141,7 @@ Loading Transactions.csv and Sku.csv:
         i.The Unknown column refers to a column that is all 0’s which we decided to keep for now. 
         ii.The Duplicate column was exactly the same as the AMT feature except 7 values so we renamed it to Duplicate and we have decided not to use it during future analysis. 
 
-    ![6](transact_pic.png)
-
-
+![6](transact_pic.png)
 Research Questions: 
 The business question is, how can the company improve product selection and find those products with less return rate? This would help the company reduce the cost of receiving returned products and improve customer satisfaction. 
 To examine this business question, we formulated a research question: what features of products are associated with higher return rate? We can accomplish this by calculating return rate on products and doing a Random Forest Analysis for feature selection. We can also retrain the Random Forest model using only the selected features and evaluate its performance on the testing data.
