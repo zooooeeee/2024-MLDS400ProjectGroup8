@@ -152,7 +152,7 @@ Think about some approaches to address the research questions.
 Link pgAdmin4 with Python
 Choose related tables and variables for feature selection and model training 
 
-# Weekly 4:
+# Week 4 10/30 - 11/03:
 
 ## Work done up to 11/03:
 
