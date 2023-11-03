@@ -152,8 +152,29 @@ Think about some approaches to address the research questions.
 Link pgAdmin4 with Python
 Choose related tables and variables for feature selection and model training 
 
-          
-             
+# Weekly 4:
+
+## Work done up to 11/03:
+
+This week we decided to look at our research question through a broader lens. Thus, we decided to first analyze the data and find the top 10 states that have the highest item return rate. Specifically, we are interested in the State feature so we can see statewide which states have the highest product return rates. Then after that we wanted to identify from those top 10 states which zip codes tend to have higher return rates than others. To achieve this, we did the following: 
+1. Attempted to join the SKU table with the STRINFO table so we can extract the zip code and state features. 
+2. Then we wanted to join the SKU table with the Transactions table through SQL queries within the pgAdmin4 open source administration and development platform. 
+3. Both joins that we specified above failed within PgAdmin4. Thus, given that we kept facing issues with postgreSQL we decided to face this issue next week after we consult with our TA. 
+4. Instead we successfully connected the postgreSQL server with python and we started running queries within Python as well as executing some basic analysis. 
+
+
+
+## Work planned 11/04 - 11/10:
+The following steps for next week:
+- Dive more into the returned items feature:
+    - In order to do that, we want to clean up the transaction dataset. We observed that some of       the items with the same SKU have zero “Original Price,” a circumstance that could not exist       in reality, something that we want to fix next week. 
+- Look into the relationship between returned items and the corresponding sale price
+    - The percentage of the returned items that are on sale
+    - The percentage of of the returned items that are at original price
+- Check if the top 5 return Zip code has the same brand.
+    - Resolve pgadmin4 issues and continue the analysis from this week. 
+- Dive more into the department information and find more details about the item category.
+- Make sure everyone is linked to the database with python and could make further analysis.           
 
 
             
