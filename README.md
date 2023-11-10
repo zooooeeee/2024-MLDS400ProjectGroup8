@@ -176,6 +176,53 @@ The following steps for next week:
 - Dive more into the department information and find more details about the item category.
 - Make sure everyone is linked to the database with python and could make further analysis.           
 
+# **Week 5 11/06 - 11/10:** 
+
+
+## Work done up to 11/10:
+
+**Joining table:** 
+- We decided that more data cleaning and manipulation needed to be done before we join the final table. 
+
+**Continued cleaning the transactions table:**
+- We discovered that the feature(Orgprice) in our transaction dataset had $0 price for certain items which intuitively no item should be sold for $0. Additionally, we noticed that for those items with 0 value, there were equivalent products with the same SKU but with a different price other than 0. Therefore, we decided to clean that feature by finding the max value of each unique item and then replacing the Orgprice values that were equal 0 with that max value. 
+- After we replaced the 0 values with the max(OrgPrice) values we discovered that there were still some SKU’s with 0 Orgprice. Thus, we decided to look into the skstinfo table and specifically use the Retail price to result in the missing values issues. 
+- We replaced any 0 values in the Retail feature with NaN so the 0’s are not accounted for when we take the mean.
+- We took the mean of each retail item group by SKU and then we used this mean value to replace each 0 values in the transactions table.  
+
+**Determined final dataset along with all the features that we will need for out analysis:** 
+- We decided on the final list of features that will be used to construct our final dataset. The features that we picked are the ones that we believe will help us understand and answer our main business question. After we complete our EDA we will be able to get a better understanding of whether feature engineering will be required to better answer our business question. 
+
+**Insights from the SKU table and the features we are interested in:** 
+- Explored the best-selling brands and departments, and we have incorporated some informative data visualizations in our code. 
+- We grouped by BRAND and DEPT to see which has the most products sold and created two histograms of the top 10 best-selling Bbrands and departments
+
+**Master Table Features** 
+- SKUINFO 
+- BRAND
+- DEPT
+- SKU
+- STRINFO 
+- ZIP 
+- STATE 
+- TRNSACT
+- SKU
+- STYPE (Y) 
+- STORE
+- ORGPRICE
+- QUANTITY 
+- SALEDATE
+- DEPTINFO
+- DEPTDESC
+- SKS
+- SKU 
+- RETAIL
+
+**Work for 11/13 - 11/17**
+- Continue joining subtables and performing feature specific EDA.  
+- Master table EDA  main analysis. 
+- Start drafting report text. 
+
 
             
             
