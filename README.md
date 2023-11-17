@@ -225,7 +225,7 @@ The following steps for next week:
 
 
             
-# ** Weekly Updates: 11/11/2023-11/17/2023 **
+# **Week 6 11/11 - 11/17:**
 
 **Work done up to 11/17:**
 We finished setting the framework for business question analysis. We aim to divide the project into 2 parts. The first part will focus on exploring the features that are correlated with high return rates in the year 2005. We decided to use linear regression and glm to identify significant variables. The second part will focus on predicting the return rate for products. We decided to use logistic regression for modeling. 
