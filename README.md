@@ -228,12 +228,13 @@ The following steps for next week:
 # **Week 6 11/11 - 11/17:**
 
 **Work done up to 11/17:**
+
 We finished setting the framework for business question analysis. We aim to divide the project into 2 parts. The first part will focus on exploring the features that are correlated with high return rates in the year 2005. We decided to use linear regression and glm to identify significant variables. The second part will focus on predicting the return rate for products. We decided to use logistic regression for modeling. 
 To answer question one, we used the SearchEngine package to convert zip codes to counties for further analysis. We also finished joining the master table for all transactions in 2005 in SQL. We started linear regression modeling.
 We also started drafting our final report.
 
 
-**Work for next week**
+**Work for next week:**
 - Continue building the linear regression model
 - Use logistic regression to predict which product customers will purchase or return
 - Create slides for presentation
