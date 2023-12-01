@@ -241,9 +241,19 @@ We also started drafting our final report.
 - Continue working on the final report
 
             
+# **Week 7 11/27 - 12/1:**
+
+**Work done up to 12/1:**
+
+Weekly Updates:
+Date 12/01/2023 
+
+Work done up to 12/01: 
+
+We were able to continue and finalize the feature engineering process. In addition to that we were able to train and test our first random forest model. After reviewing it we decided to improve it by tuning and selecting the most optimal hyperparameters. Further, we decided to use as a baseline to our project, a logistic regression model which we have been having a hard time getting it to work. Our team successfully got the logistic regression code to work after cleaning and manipulating our data further. We were able to balance our target classes using SMOTe and made a few more assumptions in order to be able to finalize our dataframe and run our first logistic regression model. Lastly, we continued drafting a big part of the report by explaining our business problem with ROI table, analysis and thought process. 
 
 
-
-
-
-
+**Work for next week:**
+Finalize tuning random forest hyperparameters. 
+Continue improving our logistic regression model. 
+Finalize the report and slide deck and prepare for our final submission. 
